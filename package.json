@@ -1,7 +1,7 @@
 {
   "name": "@antfu/resume",
   "private": true,
-  "packageManager": "pnpm@7.8.0",
+  "packageManager": "pnpm@9.1.4",
   "scripts": {
     "dev": "concurrently \"npx grunt watch\" \"node ./serve.js ./resume.json\"",
     "build": "grunt less && node ./build.js"
