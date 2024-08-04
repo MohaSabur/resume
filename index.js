@@ -219,9 +219,9 @@ async function render(resume) {
   })
 
   Handlebars.registerHelper('join', function (arr) {
-    return arr.join(', ')
-  })
-
+    return arr ? arr.join(', ') : '';
+  });
+  
   Handlebars.registerHelper('getGithubApi', getGithubApi)
 
   Handlebars.registerHelper('breaklines', function(text) {
