@@ -2,16 +2,18 @@
 
 This is my Résumé generator. You can check out my Résumé [here](https://resume.antfu.me).
 
-The theme is heavy modified from [jsonresume-theme-kwan](https://github.com/icoloma/jsonresume-theme-kwan).
+The theme is heavily modified from [jsonresume-theme-kwan](https://github.com/icoloma/jsonresume-theme-kwan).
 
 ## How it works
 
-- The data is hosted by [Gist](https://gist.github.com/antfu/ceb04ede6daf195eaf51e32b6aef5d4e) with [JSON Resume](https://jsonresume.org/) standard.
-- The website is hosted by [Netlify](http://netlify.com/) with CI/CD.
-- HTML is generated with [Handlebars](https://handlebarsjs.com/) and PDF is printed with [puppeteer](https://github.com/puppeteer/puppeteer/).
+- The data is hosted on [Gist](https://gist.github.com/antfu/ceb04ede6daf195eaf51e32b6aef5d4e) using the [JSON Resume](https://jsonresume.org/) standard.
+- The website is hosted on [Netlify](http://netlify.com/) with CI/CD.
+- HTML is generated with [Handlebars](https://handlebarsjs.com/) and PDF is created with [puppeteer](https://github.com/puppeteer/puppeteer/).
 
-> Note: I did a lot quick hacks to make it suitable for my design, which may not be good to be general used as a theme. While I may not have time to improve it, PRs are great welcome!
+> Note: I did a lot of quick hacks to make it suitable for my design, which may not be good for general use as a theme. While I may not have time to improve it, PRs are greatly welcome!
 
-## License
+## Containerized Version
 
-The script is licensed with MIT.
+To build the containerized version of the project, you can build the image with the command:
+```bash
+docker build . -t myresume
